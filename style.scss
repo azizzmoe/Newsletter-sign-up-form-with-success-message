@@ -20,7 +20,6 @@ body {
 }
 
 main {
-  display: none !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +86,9 @@ figure{
   }
 }
 
-.message{
+.popup{
+  display: none;
+  .message{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,4 +114,5 @@ figure{
         font-weight: bold;
         width: 100%;
     }
+}
 }
