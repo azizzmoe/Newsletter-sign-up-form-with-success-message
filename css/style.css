@@ -16,6 +16,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+main figure {
+  width: 100%;
+}
+main figure img {
+  width: 100%;
+}
 main section {
   color: #242742;
   margin-top: 2rem;
@@ -26,12 +32,17 @@ main section {
 }
 main section h2 {
   color: #36384e;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+main section .list .items {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
 }
 main section form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 main section form label {
   color: #242742;
@@ -39,12 +50,12 @@ main section form label {
   font-size: small;
 }
 main section form input {
-  padding: 0.5rem;
+  padding: 0.9rem;
   border-radius: 0.5rem;
   border: 0.5px #9294a0 solid;
 }
 main section form button {
-  background-color: #36384e;
+  background-color: #242742;
   color: #ffffff;
   padding: 1rem;
   border: none;
