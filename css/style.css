@@ -11,6 +11,7 @@ body {
 }
 
 main {
+  display: none !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,4 +61,31 @@ main section form button {
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  gap: 2rem;
+  padding: 1rem;
+}
+.message h2 {
+  color: #36384e;
+  font-size: 3rem;
+}
+.message p {
+  color: #242742;
+}
+.message .dismiss {
+  margin-top: 10rem;
+  background-color: #242742;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
