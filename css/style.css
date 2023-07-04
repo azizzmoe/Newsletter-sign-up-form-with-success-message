@@ -60,6 +60,7 @@ main section form button {
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .popup {
@@ -90,4 +91,5 @@ main section form button {
   border-radius: 0.5rem;
   font-weight: bold;
   width: 100%;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
