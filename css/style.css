@@ -10,19 +10,22 @@ body {
   font-size: 16px;
 }
 
-main {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main figure {
+.container figure {
   width: 100%;
 }
-main figure img {
+.container figure .desktop-illus {
+  display: none;
+}
+.container figure .mobile-illus {
   width: 100%;
 }
-main section {
+.container section {
   color: #242742;
   margin-top: 2rem;
   display: flex;
@@ -30,31 +33,31 @@ main section {
   gap: 1rem;
   padding: 1rem;
 }
-main section h2 {
+.container section h2 {
   color: #36384e;
   font-size: 3rem;
 }
-main section .list .items {
+.container section .list .items {
   display: flex;
   gap: 1rem;
   padding: 0.5rem 0;
 }
-main section form {
+.container section form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main section form label {
-  color: #242742;
+.container section form label {
+  color: #36384e;
   font-weight: bold;
   font-size: small;
 }
-main section form input {
+.container section form input {
   padding: 0.9rem;
   border-radius: 0.5rem;
   border: 0.5px #9294a0 solid;
 }
-main section form button {
+.container section form button {
   background-color: #242742;
   color: #ffffff;
   padding: 1rem;
@@ -92,4 +95,31 @@ main section form button {
   font-weight: bold;
   width: 100%;
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  main {
+    background-color: #242742;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    background-color: #ffffff;
+    flex-direction: row-reverse;
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .container figure {
+    width: auto;
+  }
+  .container figure .mobile-illus {
+    display: none;
+  }
+  .container figure .desktop-illus {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

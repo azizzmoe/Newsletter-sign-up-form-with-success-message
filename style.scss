@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 // Color Variables
-
 $Tomato: #ff6257;
 $Dark-Slate-Grey: #242742;
 $Charcoal-Grey: #36384e;
@@ -19,22 +18,23 @@ body {
   font-size: 16px;
 }
 
-main {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-figure{
-  width: 100%;
+  figure {
+    width: 100%;
 
-  img{
-  width: 100%;
+    .desktop-illus {
+      display: none;
+    }
 
+    .mobile-illus {
+      width: 100%;
+    }
   }
-}
-  
-
   section {
     color: $Dark-Slate-Grey;
     margin-top: 2rem;
@@ -42,18 +42,18 @@ figure{
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+
     h2 {
       color: $Charcoal-Grey;
       font-size: 3rem;
     }
 
-    .list{
-      .items{
+    .list {
+      .items {
         display: flex;
         gap: 1rem;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
       }
-
     }
 
     form {
@@ -61,60 +61,91 @@ figure{
       flex-direction: column;
       gap: 1rem;
 
-
       label {
-        color: #242742;
+        color: $Charcoal-Grey;
         font-weight: bold;
         font-size: small;
       }
 
       input {
         padding: 0.9rem;
-        border-radius: .5rem;
-        border: .5px $Grey solid;
-
+        border-radius: 0.5rem;
+        border: 0.5px $Grey solid;
       }
 
-      button{
+      button {
         background-color: $Dark-Slate-Grey;
         color: $White;
         padding: 1rem;
         border: none;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         cursor: pointer;
       }
     }
   }
 }
 
-.popup{
+.popup {
   display: none;
-  .message{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
-  height: 100vh;
-  gap: 2rem;
-  padding: 1rem;
-  h2 {
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    gap: 2rem;
+    padding: 1rem;
+
+    h2 {
       color: $Charcoal-Grey;
       font-size: 3rem;
     }
 
-    p{
+    p {
       color: $Dark-Slate-Grey;
     }
-    .dismiss{
+
+    .dismiss {
       margin-top: 10rem;
-       background-color: $Dark-Slate-Grey;
-        color: $White;
-        padding: 1rem;
-        border: none;
-        border-radius: .5rem;
-        font-weight: bold;
-        width: 100%;
-        cursor: pointer;
+      background-color: $Dark-Slate-Grey;
+      color: $White;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
     }
+  }
 }
+
+@media (min-width: 900px) {
+  main {
+    background-color: $Dark-Slate-Grey;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    background-color: $White;
+    flex-direction: row-reverse;
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 2rem;
+
+    figure {
+      width: auto;
+
+      .mobile-illus {
+        display: none;
+      }
+      .desktop-illus {
+        display: block;
+        // width: 50%;
+      }
+    }
+  }
 }

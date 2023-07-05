@@ -15,49 +15,53 @@
 
   <body>
     <main>
-      <figure>
-        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
-      </figure>
-      <section>
-        <h2>Stay updated!</h2>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-        <div class="list">
-
-          <div class="items">
-            <img src="./assets/images/icon-list.svg" alt="icon-list">
-            <p>Product discovery and building what matters</p>
+      <div class="container">
+        <figure>
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop"
+            class="desktop-illus" />
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" class="mobile-illus" />
+        </figure>
+        <section>
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      
+          <div class="list">
+      
+            <div class="items">
+              <img src="./assets/images/icon-list.svg" alt="icon-list">
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="items">
+              <img src="./assets/images/icon-list.svg" alt="icon-list">
+      
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="items">
+              <img src="./assets/images/icon-list.svg" alt="icon-list">
+      
+              <p>And much more!</p>
+            </div>
           </div>
-          <div class="items">
-            <img src="./assets/images/icon-list.svg" alt="icon-list">
-
-            <p>Measuring to ensure updates are a success</p>
-          </div>
-          <div class="items">
-            <img src="./assets/images/icon-list.svg" alt="icon-list">
-
-            <p>And much more!</p>
-          </div>
+      
+          <form action="">
+            <label for="email">Email address</label>
+            <input type="email" placeholder="email@company.com">
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </section>
+      </div>
+      
+      <div class="popup">
+        <div class="message">
+          <img src="./assets/images/icon-success.svg" alt="icon-success">
+          <h2>Thanks for subscribing!</h2>
+          <p>A confirmation email has been sent to <strong>ash@loremcompany</strong>.com.
+            Please open it and click the button inside to confirm your subscription.</p>
+          <button class="dismiss">Dismiss message</button>
         </div>
+      </div>
 
-        <form action="">
-          <label for="email">Email address</label>
-          <input type="email" placeholder="email@company.com">
-          <button type="submit">Subscribe to monthly newsletter</button>
-        </form>
-      </section>
     </main>
-
-   <div class="popup">
-    <div class="message">
-      <img src="./assets/images/icon-success.svg" alt="icon-success">
-      <h2>Thanks for subscribing!</h2>
-      <p>A confirmation email has been sent to <strong>ash@loremcompany</strong>.com.
-        Please open it and click the button inside to confirm your subscription.</p>
-      <button class="dismiss">Dismiss message</button>
-    </div>
-   </div>
-
     <script src="./app.js"></script>
   </body>
 
