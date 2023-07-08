@@ -122,4 +122,20 @@ body {
   .container figure .desktop-illus {
     display: block;
   }
+  .popup {
+    align-self: center;
+    width: 40%;
+  }
+  .popup .message {
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    height: auto;
+  }
+  .popup .message p {
+    padding: 1rem;
+  }
+  .popup .message .dismiss {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

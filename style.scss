@@ -148,4 +148,23 @@ body {
       }
     }
   }
+  .popup {
+    align-self: center;
+    width: 40%;
+
+    .message {
+      padding: 3rem 2rem;
+      border-radius: 2rem;
+      background-color: $White;
+      height: auto;
+      p {
+        padding: 1rem;
+        // font-size: 1.5rem;
+      }
+
+      .dismiss {
+        margin-top: 0;
+      }
+    }
+  }
 }

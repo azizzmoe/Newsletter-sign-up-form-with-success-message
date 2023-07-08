@@ -10,6 +10,6 @@ form.addEventListener("submit", (e) => {
 })
 
 dismiss.addEventListener("click", () => {
-    container.style.display = "block"
+    container.style.display = "flex"
     popup.style.display = "none"
 })
