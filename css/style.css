@@ -47,6 +47,10 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+.container section form .form-head {
+  display: flex;
+  justify-content: space-between;
+}
 .container section form label {
   color: #36384e;
   font-weight: bold;
@@ -101,6 +105,22 @@ body {
 }
 .popup .message .dismiss:hover {
   background: linear-gradient(45deg, #ff564a, #ff9557);
+}
+
+.invalid-border {
+  outline: 2px solid red;
+}
+
+.invalid-email {
+  font-weight: bold;
+  font-size: small;
+  color: #ff6257;
+  display: none;
+}
+
+.invalid-input {
+  background-color: #facbc8;
+  color: red;
 }
 
 @media (min-width: 900px) {
