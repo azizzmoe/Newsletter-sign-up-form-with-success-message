@@ -44,8 +44,9 @@
           </div>
       
           <form action="">
-            <label for="email">Email address</label>
-            <input type="email" placeholder="email@company.com">
+            <div class="form-head"><label for="email">Email address</label>
+            <span class="invalid-email">Valid email required</span></div>
+            <input type="email" id="email" placeholder="email@company.com" name="email">
             <button type="submit">Subscribe to monthly newsletter</button>
           </form>
         </section>
@@ -55,7 +56,7 @@
         <div class="message">
           <img src="./assets/images/icon-success.svg" alt="icon-success">
           <h2>Thanks for subscribing!</h2>
-          <p>A confirmation email has been sent to <strong>ash@loremcompany</strong>.com.
+          <p>A confirmation email has been sent to <strong class="email-display">ash@loremcompany</strong>.com.
             Please open it and click the button inside to confirm your subscription.</p>
           <button class="dismiss">Dismiss message</button>
         </div>
